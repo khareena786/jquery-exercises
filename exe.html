@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>jquery</title>
+    <h1>JQUERY BASICS</h1>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+<link href="styles.css" rel="stylesheet">
+</head>
+<body>
+    <script>
+        $(document).ready(function(){
+            $("#btn1").click(function(){
+                alert("Text: " + $("#test").text());
+            });
+            $("#btn2").click(function(){
+                alert("HTML: " + $("#test").html());
+            });
+
+            $("#bt").click(function(){
+          alert("Value: " + $("#t").val());
+    });
+         
+    
+    });
+
+    $(document).ready(function(){
+  $("#btn4").click(function(){
+    $("#test1").text("JQUERY");
+  });
+  $("#btn5").click(function(){
+    $("#test2").html("<b>BASICS OF JQUERY</b>");
+  });
+  $("#btn6").click(function(){
+    $("#test3").val("manaswini");
+  });
+});
+
+//jquery add element 
+$(document).ready(function(){
+  $("#but").click(function(){
+    $("h2").prepend("<b>WELCOME TO  </b>");
+  
+  });
+  $("#cute").click(function(){
+  $("ol").prepend("<li>adding item at the top</li>");
+
+  });
+  // adding css method()
+
+  $("#hey").click(function(){
+    $("h2").css("background-color", "yellow");
+  });
+
+  //jquery remove element
+  $("#mute").click(function(){
+    $("h2").remove();
+  });
+
+});
+ </script>
+    <button id="btn1">text </button>
+    <p id="test">This is some <b>jquery</b> text.</p>
+
+    <button id="btn2">html</button>
+    <p1 id="test">this is html part used <b>jquery</b> in the text to bold</p1>
+
+    <br>
+    <br>
+    <button id="bt">Value</button>
+    <p>Name: <input type="text" id="t" value="Mickey Mouse"></p>
+
+    <br>
+    <br>
+    <p id="test1">This is a paragraph.</p>
+     <p id="test2">This is another paragraph.</p>
+
+    <p1>Input field: <input type="text" id="test3" value="Mickey Mouse"></p1>
+
+    
+<button id="btn4">Set Text</button>
+<button id="btn5">Set HTML</button>
+<button id="btn6">Set Value</button>
+
+<br>
+<br>
+<!-- jquery add element -->
+<h2>JQUERY</h2>
+<h2>JQUERY BASICS.</h2>
+
+<ol>
+  <li>List item 1</li>
+  <li>List item 2</li>
+  <li>List item 3</li>
+</ol>
+
+<button id="but"> text</button>
+<button id="cute">item</button>
+<!-- css method -->
+<button id ="hey">add color</button>
+<!-- remove method -->
+<button id="mute">remove</button>
+
+
+
+    
+
+</body>
+</html>

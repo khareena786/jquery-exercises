@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>jquery</title>
+    <h1>JQUERY BASICS</h1>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+<script src="demo.js"></script>
+<link href="styles.css" rel="stylesheet">
+</head>
+<body>
+<script>
+   $(document).ready(function(){
+        $("#hello").click(function(){
+            $("#ok").hide();
+            alert("The paragraph is now hidden");
+        });
+   
+      $("input").focus(function(){
+        $(this).css("background-color", "yellow");
+      });
+      $("input").blur(function(){
+        $(this).css("background-color", "green");
+      });
+
+    }); 
+    </script>
+
+     Name: <input type="text" name="fullname"><br>
+     Email: <input type="text" name="email">
+     <br>
+     <button id="hello">Click me to hide content</button>
+    <p id="ok">this is jquery</p>
+    <h2>JQUERY INTRO</h2>
+     <button id="toggle">Toggle between hiding and showing the paragraphs</button>
+     <br>
+     <p></p>
+   <p1>Jquery is a javascript library.</p1>
+   <br>
+   <p></p>
+   <button id="jq">click here</button>
+   <div id ="div1" style="background-color: aquamarine; width:80px; height: 80px;">HTML</div>
+   <div id ="div2" style="background-color: bisque; width:80px; height: 80px;">CSS</div>
+   <div id ="div3" style="background-color: hotpink; width:80px; height: 80px;">JAVA SCRIPT</div>
+    <br>
+    <button id="stop">Stop sliding</button>
+   <div id="flip" >JQUERY <em>Definition</em></div>
+   <div id="panel"> Jquery is more easier to use, it will make javascript easier to understand</div>
+
+   <p id="p2">JQUERY IS FUN!!</p>
+   <button id="hii">click it</button>
+    <br>
+
+</body>
+</html>

@@ -1,0 +1,24 @@
+#panel, #flip {
+    padding: 5px;
+    text-align: center;
+    background-color: #8dba08;
+    border: solid 1px #50d4c9;
+  }
+  
+  #panel {
+    padding: 50px;
+    display: none;
+  }
+
+  body{
+    background-color: azure;
+  }
+
+  h1{
+    color:#8dba08;
+    text-align: center;
+  }
+
+  #p2{
+    color:blue;
+  }
